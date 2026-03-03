@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Crave Kenya · City Mall Mombasa</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">CRAVE <span>satisfying every craving...</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#info">Info</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="menu-btn" id="menuBtn">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <i class="fas fa-times close-icon" id="closeOverlay"></i>
+    <a href="#home" class="overlay-link" data-section="home">Home</a>
+    <a href="#menu" class="overlay-link" data-section="menu">Menu</a>
+    <a href="#info" class="overlay-link" data-section="info">Info</a>
+    <a href="#contact" class="overlay-link" data-section="contact">Contact</a>
+  </div>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/254705000275" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <button class="float-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Hero with catchy text -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Crave Kenya</h1>
+      <p class="tagline">where coastal flavours come alive</p>
+      <div class="location"><i class="fas fa-map-pin"></i> City Mall Nyali, Mombasa</div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="container" id="highlights">
+    <h2 class="section-title">First impression</h2>
+    <div class="grid-3">
+      <div class="card"><i class="fas fa-cocktail"></i><h3>Great cocktails</h3><div class="badge-wrapper"><span class="badge">coffee</span><span class="badge">dessert</span><span class="badge">tea</span></div></div>
+      <div class="card"><i class="fas fa-utensils"></i><h3>Popular for</h3><div class="badge-wrapper"><span class="badge">Breakfast</span><span class="badge">Lunch</span><span class="badge">Dinner</span><span class="badge">Solo dining</span></div></div>
+      <div class="card"><i class="fas fa-wheelchair"></i><h3>Accessible</h3><div class="badge-wrapper"><span class="badge">Wheelchair parking</span><span class="badge">Entrance</span><span class="badge">Seating</span><span class="badge">Toilet</span></div></div>
+    </div>
+  </section>
+
+  <!-- Service & Offerings -->
+  <section class="container" style="padding-top:0">
+    <div class="grid-2">
+      <div class="card"><i class="fas fa-concierge-bell"></i><h3>Service</h3><div class="badge-wrapper"><span class="badge">Outdoor seating</span><span class="badge">Delivery</span><span class="badge">Drive-through</span><span class="badge">Takeaway</span><span class="badge">Dine-in</span></div></div>
+      <div class="card"><i class="fas fa-wine-bottle"></i><h3>Offerings</h3><div class="badge-wrapper"><span class="badge">Alcohol</span><span class="badge">Beer</span><span class="badge">Coffee</span><span class="badge">All you can eat</span><span class="badge">Cocktails</span><span class="badge">Halal</span><span class="badge">Happy-hour</span><span class="badge">Spirits</span><span class="badge">Vegan</span><span class="badge">Vegetarian</span><span class="badge">Late-night</span><span class="badge">Small plates</span><span class="badge">Wine</span></div></div>
+    </div>
+  </section>
+
+  <!-- Menu section (interactive) -->
+  <section class="container" id="menu">
+    <h2 class="section-title">Satisfy your craving</h2>
+    
+    <!-- FOOD -->
+    <div class="menu-category">
+      <h2><i class="fas fa-burger" style="color:#c97c3d;"></i> Food</h2>
+      <div class="menu-items">
+        <span class="menu-item" data-category="Burgers">Burgers</span>
+        <span class="menu-item highlight" data-category="Special C3 Chips">Special C3 Chips</span>
+        <span class="menu-item" data-category="Salads">Salads</span>
+        <span class="menu-item" data-category="Wings">Wings</span>
+        <span class="menu-item" data-category="Chicken">Chicken</span>
+        <span class="menu-item" data-category="Steaks">Steaks</span>
+        <span class="menu-item" data-category="Curries">Curries</span>
+        <span class="menu-item" data-category="Seafood">Seafood</span>
+        <span class="menu-item" data-category="Pasta">Pasta</span>
+        <span class="menu-item" data-category="Pizza">Pizza</span>
+        <span class="menu-item" data-category="Soups">Soups</span>
+        <span class="menu-item" data-category="Sandwiches">Sandwiches</span>
+        <span class="menu-item" data-category="Bites">Bites</span>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-category">
+      <h2><i class="fas fa-cake-candles" style="color:#c97c3d;"></i> Desserts</h2>
+      <div class="menu-items">
+        <span class="menu-item" data-category="Cakes">Cakes</span>
+        <span class="menu-item" data-category="Premium Cakes">Premium Cakes</span>
+        <span class="menu-item" data-category="Cheesecakes">Cheesecakes</span>
+        <span class="menu-item" data-category="Buttons">Buttons</span>
+        <span class="menu-item" data-category="Waffles">Waffles</span>
+        <span class="menu-item" data-category="Extreme Waffles">Extreme Waffles</span>
+        <span class="menu-item" data-category="Donuts">Donuts</span>
+        <span class="menu-item" data-category="Ice Cream">Ice Cream</span>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category">
+      <h2><i class="fas fa-mug-hot" style="color:#c97c3d;"></i> Drinks</h2>
+      <div class="menu-items">
+        <span class="menu-item" data-category="Juices">Juices</span>
+        <span class="menu-item" data-category="Brainfreezes">Brainfreezes</span>
+        <span class="menu-item" data-category="Shakes">Shakes</span>
+        <span class="menu-item" data-category="Freakshakes">Freakshakes</span>
+        <span class="menu-item" data-category="Healthy drinks">Healthy drinks</span>
+        <span class="menu-item" data-category="Mocktails">Mocktails</span>
+        <span class="menu-item" data-category="Iced teas">Iced teas</span>
+        <span class="menu-item" data-category="Teas">Teas</span>
+        <span class="menu-item" data-category="Speciality coffee">Speciality coffee</span>
+        <span class="menu-item" data-category="Sweet coffees">Sweet coffees</span>
+        <span class="menu-item" data-category="Iced coffees">Iced coffees</span>
+        <span class="menu-item" data-category="Frappes">Frappes</span>
+        <span class="menu-item" data-category="Matcha">Matcha</span>
+        <span class="menu-item" data-category="Lemonades">Lemonades</span>
+      </div>
+    </div>
+
+    <!-- Specials -->
+    <div class="specials-grid">
+      <div class="special-card">
+        <h3><i class="fas fa-moon"></i> Iftar / Ramadhan</h3>
+        <p style="font-size:1.8rem; font-weight:600;">1,800 KES<span style="font-size:1rem;">/person</span></p>
+        <div class="badge-wrapper">Package available</div>
+      </div>
+      <div class="special-card">
+        <h3><i class="fas fa-sun"></i> Breakfast (6am–12pm)</h3>
+        <p>Morning bites · Brunches · Sandwiches</p>
+      </div>
+      <div class="special-card">
+        <h3><i class="fas fa-utensils"></i> Mombasa special</h3>
+        <p>Coastal flavours & signature dishes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info section -->
+  <section class="container" id="info">
+    <h2 class="section-title">Good to know</h2>
+    <div class="grid-4">
+      <div class="card"><i class="fas fa-users"></i><h3>Crowd</h3><div class="badge-wrapper"><span class="badge">Groups</span><span class="badge">Tourists</span><span class="badge">Uni students</span></div></div>
+      <div class="card"><i class="fas fa-calendar-check"></i><h3>Planning</h3><div class="badge-wrapper"><span class="badge">Accepts reservations</span><span class="badge">Usually a wait</span></div></div>
+      <div class="card"><i class="fas fa-credit-card"></i><h3>Payments</h3><div class="badge-wrapper"><span class="badge">Credit cards</span><span class="badge">Debit cards</span><span class="badge">NFC</span><span class="badge">Mastercard/Visa</span></div></div>
+      <div class="card"><i class="fas fa-child"></i><h3>Children</h3><div class="badge-wrapper"><span class="badge">Good for kids</span><span class="badge">Kids' menu</span><span class="badge">Birthday</span></div></div>
+    </div>
+    <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:2rem;">
+      <div class="badge" style="font-size:1.2rem; padding:1rem 2rem;"><i class="fas fa-parking"></i> Free parking lot · plenty</div>
+      <div class="badge" style="font-size:1.2rem; padding:1rem 2rem;"><i class="fas fa-wifi"></i> Free Wi-Fi</div>
+      <div class="badge" style="font-size:1.2rem; padding:1rem 2rem;"><i class="fas fa-clock"></i> 6am – 11:59pm daily</div>
+    </div>
+  </section>
+
+  <!-- Contact Section (map removed) -->
+  <section class="container" id="contact">
+    <h2 class="section-title">Contact us</h2>
+    <div class="grid-2" style="margin-bottom: 2rem;">
+      <div class="card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Visit us</h3>
+        <p>City Mall Nyali, Malindi Rd, Mombasa, Kenya</p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+254705000275">+254 705 000 275</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@cravekenya.co.ke">info@cravekenya.co.ke</a></p>
+      </div>
+      <div class="card">
+        <i class="fas fa-clock"></i>
+        <h3>Opening hours</h3>
+        <p>Monday – Sunday: 6:00 AM – 11:59 PM</p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/254705000275">+254 705 000 275</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for sub-items (with pictures) -->
+  <div class="modal" id="menuModal">
+    <div class="modal-content">
+      <i class="fas fa-times modal-close" id="modalClose"></i>
+      <div class="modal-title" id="modalTitle">Category</div>
+      <ul class="modal-list" id="modalList"></ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p><i class="fas fa-heart" style="color:#c97c3d;"></i> Crave Kenya · City Mall Nyali, Mombasa</p>
+    <p style="font-size:1.1rem;">made by <a href="#">Dw33pY</a></p>
+    <p style="opacity:0.7; margin-top:1rem;">© satisfy every craving</p>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
